@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Encriptador de texto Alura reto</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./Imagenes/aluraLogo.png" type="image/icon type" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img
+        alt="Logo de Encriptador Alura"
+        class="logo"
+        src="./imagenes encriptador/Logo.png"
+      />
+    </header>
+
+    <main class="conteiner">
+      <textarea
+        name="text"
+        id="texto"
+        class="texto"
+        cols="35"
+        rows="10"
+        placeholder="Ingrese el texto aquí"
+      ></textarea>
+
+      <div class="mensajes" id="mensajes">
+        <section class="vacio" id="vacio">
+          <h1>
+            <img
+              src="./imagenes encriptador/Muñeco.png"
+              alt="Imágen de mensaje no encontrado"
+              id="imagenSinMensaje"
+            />
+          </h1>
+          <h2 id="sinMensaje">Ningún mensaje fue encontrado</h2>
+          <p id="descpripcionSinMensaje">
+            Ingresa el texto que desea encriptar o desencriptar
+          </p>
+        </section>
+
+        <section>
+          <textarea
+            name="text"
+            id="resultado"
+            class="texto"
+            cols="50"
+            rows="12"
+          ></textarea>
+          <button class="copiar" id="copiar">Copiar Texto</button>
+        </section>
+      </div>
+
+      <section class="botones">
+        <p>
+          <span class="iconify" data-icon="bi:exclamation-circle-fill"></span>
+          Solo letras minúsculas y sin acento
+        </p>
+        <button type="submit" class="encriptar" id="encriptar">Encriptar</button>
+        <button type="submit" class="desencriptar" id="desencriptar">Desencriptar</button>
+      </section>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
